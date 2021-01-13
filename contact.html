@@ -48,76 +48,77 @@
 
     </div>
 
-    
 
-<form>
-    <div class="row" style="margin-top: 20px;">
-        <div class="col-4"></div>
-        <div class="col-2">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">Male</label>
+
+    <form>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-4"></div>
+            <div class="col-2">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio1">Hello</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Female</label>
+                </div>
+                <div class="col-6"></div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">Female</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                <label class="form-check-label" for="inlineRadio3">Hello</label>
-            </div>
-            <div class="col-6"></div>
         </div>
-    </div>
 
-    <div class="row" style="margin-top: 10px;">
-        <div class="col-4"></div>
-        <div class="col-2">
-            <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col-2">
-            <input type="text" class="form-control" placeholder="Last name">
-        </div>
-        <div class="col-4"></div>
-    </div>
-
-    <div class="row" style="margin-top: 10px;">
-        <div class="col-4"></div>
-        <div class="col-4"><input type="text" id ="mailcontact"class="form-control" placeholder="E-Mail"></div>
-        <div class="col-2"></div>
-    </div>
-
-    <div class="row" style="margin-top: 10px;">
-        <div class="col-4"></div>
-        <div class="col-4">
-            <div class="form-group">
-                <!--<label for="exampleFormControlTextarea1">Your Message:</label>-->
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message to us."></textarea>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-4"></div>
+            <div class="col-2">
+                <input type="text" id="firstname" class="form-control" placeholder="First name" required>
             </div>
+            <div class="col-2">
+                <input type="text" id="lastname" class="form-control" placeholder="Last name" required>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-4"></div>
+            <div class="col-4"><input type="text" id="mailcontact" class="form-control" placeholder="E-Mail" required></div>
             <div class="col-2"></div>
         </div>
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="form-group">
+                    <!--<label for="exampleFormControlTextarea1">Your Message:</label>-->
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message to us." required></textarea>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-2"><button type="submit" id="contactbtn" class="btn btn-dark">Send</button></div>
+            <div class="col-6"></div>
+        </div>
+    </form>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-4"></div>
+        <div class="col-2"><h4>Contact options</h4></div>
+        <div class="col-6"></div>
     </div>
-</form>
-    
-<div class="row">
-    <div class="col-4"></div>
-    <div class="col-2"><button type="button" class="btn btn-dark">Send</button></div>
-    <div class="col-6"></div>
-</div>
-
-<div class="row" style="margin-top: 50px;">
-    <div class="col-4"></div>
-    <div class="col-2"><h4>Contact options</h4></div>
-    <div class="col-6"></div>
-</div>
-<div class="row" style="margin-top: 10px;">
-    <div class="col-4"></div>
-    <div class="col-2"><p><b>Contact via phone:</b><br/>+49(0)5483/4875456</p></div>
-    <div class="col-2"><p><b>Contact via mail:</b><br /><a>something@something.com</a></p></div>
-</div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-4"></div>
+        <div class="col-2"><p><b>Contact via phone:</b><br />+49(0)5483/4875456</p></div>
+        <div class="col-2"><p><b>Contact via mail:</b><br /><a>something@something.com</a></p></div>
+    </div>
 
 
-<div class="jumbotron text-center bg-light" style="margin-top: 20px;">
+    <div class="jumbotron text-center bg-light" style="margin-top: 20px;">
         <div class="container">
             <div class="row">
                 <div class="col-3"><a href="#">Something</a><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p></div>
@@ -134,5 +135,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
