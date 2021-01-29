@@ -134,7 +134,7 @@ function cardpicker() {
 
     // round counter
     round = round + 1
-    $('#round').text("Runde: " + round);
+    $("#round").attr('value', 'Runde: ' + round);
 
     // timer end
     }, 500);
