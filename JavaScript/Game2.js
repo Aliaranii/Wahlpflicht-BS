@@ -126,8 +126,12 @@ function cardpicker() {
 
     if (winbool == 0) {
         $('#losewin').text("Du musst trinken!");
+        $("#losewin").attr('value', 'Du musst trinken');
+        $("#losewin").attr('class', 'btn btn-danger');
     } else if (winbool == 1) {
         $('#losewin').text("Glueck gehabt!");
+        $("#losewin").attr('value', 'Glück gehabt');
+        $("#losewin").attr('class', 'btn btn-success');
     } else {
         console.log("BIG BOOL ERROR");
     }
