@@ -2,46 +2,40 @@
 
 $(document).ready(function () {
 
-
+    // pressing lower button
     $('#btnlow').click(function () {
         clicked = 1;
         cardpicker();
-        round = round + 1
-        $('#round').text("Runde: " + round);
-        
     })
 
+    // pressing higher button
     $('#btnhigh').click(function () {
         clicked = 2;
-        cardpicker();
-        round = round + 1
-        $('#round').text("Runde: " + round);
-        
+        cardpicker(); 
     })
 
+    // pressing red button
     $('#btnred').click(function () {
         clicked = 3;
         cardpicker();
-        round = round + 1
-        $('#round').text("Runde: " + round);
-
+        
     })
 
+    // pressing black button
     $('#btnblack').click(function () {
         clicked = 4;
         cardpicker();
-        round = round + 1
-        $('#round').text("Runde: " + round);
-
     })
 
 });
 
-
-
-
 function cardpicker() {
 
+    // timer start
+    setTimeout(function timer() {
+
+
+    // random number generator for playcards
     cardnumbersaver = cardnumber;
     cardnumber = Math.floor(Math.random() * 13);
 
@@ -65,8 +59,8 @@ function cardpicker() {
         numbername = "J";
     } 
 
+    // random colour generator for playcards
     cardcoloursaver = cardcolour;
-
     cardcolour = Math.floor(Math.random() * 2);
 
     if (cardcolour == 0) {
@@ -76,6 +70,9 @@ function cardpicker() {
     } else {
         console.log("BIG ERROR");
     }
+
+    // getting jpg name complicated and unnecessary
+    cardselectedsaver = cardselected;
 
     if (cardcolour == 0) {
         redcard = cardcolourred[Math.floor(Math.random() * cardcolourred.length)];
@@ -91,36 +88,61 @@ function cardpicker() {
         console.log("ANOTHER BIG ERROR");
     }
 
+    // prev card showcase
+    if (round >= 1) {
+        $("#prevcard").attr('src', '../Images/Game2/' + cardselectedsaver + '.jpg');
+    }
+
+    // actual card showcase
+    $("#card").attr('src', '../Images/Game2/' + cardselected + '.jpg');
+
+
+    // win or lose message is the question
     if (clicked == 1) {
         if (cardnumber > cardnumbersaver) {
-            $('#losewin').text("Du musst trinken!");
+            winbool = 0;
         } else {
-            $('#losewin').text("Glueck gehabt!");
+            winbool = 1;
         }
     } else if (clicked == 2) {
         if (cardnumber < cardnumbersaver) {
-            $('#losewin').text("Du musst trinken!");
+            winbool = 0;
         } else {
-            $('#losewin').text("Glueck gehabt!");
+            winbool = 1;
         }
     } else if (clicked == 3) {
         if (cardcolour == 1) {
-            $('#losewin').text("Du musst trinken!");
+            winbool = 0;
         } else {
-            $('#losewin').text("Glueck gehabt!");
+            winbool = 1;
         }
     } else if (clicked == 4) {
         if (cardcolour == 0) {
-            $('#losewin').text("Du musst trinken!");
+            winbool = 0;
         } else {
-            $('#losewin').text("Glueck gehabt!");
+            winbool = 1;
         }
     }
 
-    $("#card").attr('src', '../Images/Game2/' + cardselected + '.jpg');
+    if (winbool == 0) {
+        $('#losewin').text("Du musst trinken!");
+    } else if (winbool == 1) {
+        $('#losewin').text("Glueck gehabt!");
+    } else {
+        console.log("BIG BOOL ERROR");
+    }
+
+    // round counter
+    round = round + 1
+    $('#round').text("Runde: " + round);
+
+    // timer end
+    }, 500);
     
 }
+// many variables 
 
+var winbool;
 var i = 0;
 var clicked;
 var numbername;
@@ -134,6 +156,7 @@ var cardpickerval = 0;
 var cardcolour;
 var cardnumber;
 
+var cardselectedsaver;
 var cardcoloursaver = 0;
 var cardnumbersaver;
 
