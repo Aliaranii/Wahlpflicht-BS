@@ -130,7 +130,7 @@ function cardpicker() {
         $("#losewin").attr('class', 'btn btn-danger');
     } else if (winbool == 1) {
         $('#losewin').text("Glueck gehabt!");
-        $("#losewin").attr('value', 'Glück gehabt');
+        $("#losewin").attr('value', 'GlÃ¼ck gehabt');
         $("#losewin").attr('class', 'btn btn-success');
     } else {
         console.log("BIG BOOL ERROR");

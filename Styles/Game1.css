@@ -1,0 +1,18 @@
+.d-flex{
+    margin: 10px;
+    font-family: "Comic Sans MS";
+}
+
+#name{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#buttonStart{
+    background-color: white;
+}
+
+#buttonStart:hover{
+    background-color: lightgray;
+    transform: scale(2,2);
+}
