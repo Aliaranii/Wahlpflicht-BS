@@ -1,8 +1,13 @@
 var pictures=["../Images/Game1/w1.png", "../Images/Game1/w2.png", "../Images/Game1/w3.png", "../Images/Game1/w4.png", "../Images/Game1/w5.png", "../Images/Game1/w6.png"];
 var newButtonText="Neues Spiel starten";
 
+window.onload=function (){
+    document.getElementById("alert").hidden=true;
+}
+
 function startGame(){
     /*Player1*/
+    document.getElementById("alert").hidden=true;
     var resultOne=Math.floor(Math.random() * 6) + 1;
     console.log(resultOne);
     document.getElementById('img2').src="../Images/Bierlogo.png";
@@ -45,13 +50,16 @@ function startGame(){
     for (let i = 1; i < 2; i++) {
         setTimeout(function timer() {
             if(resultOne>resultTwo){
-                alert("Spieler 1 hat gewonnen")
+                document.getElementById('alertResult').innerText="Spieler 1 hat gewonnen";
+                document.getElementById("alert").hidden=false;
             }
             else if (resultOne==resultTwo){
-                alert("Unentschieden");
+                document.getElementById('alertResult').innerText="Unentschieden";
+                document.getElementById("alert").hidden=false;
             }
             else {
-                alert("Spieler 2 hat gewonnen");
+                document.getElementById('alertResult').innerText="Spieler 2 hat gewonnen";
+                document.getElementById("alert").hidden=false;
             }
         }, i * 12000);
     }

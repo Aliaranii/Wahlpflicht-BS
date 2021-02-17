@@ -14,5 +14,9 @@
 
 #buttonStart:hover{
     background-color: lightgray;
-    transform: scale(2,2);
+}
+
+#alertResult{
+    margin-bottom: 0;
+    text-align: center;
 }
