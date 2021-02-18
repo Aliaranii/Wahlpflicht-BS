@@ -51,14 +51,17 @@ function startGame(){
         setTimeout(function timer() {
             if(resultOne>resultTwo){
                 document.getElementById('alertResult').innerText="Spieler 1 hat gewonnen";
+                document.getElementById('alertText').innerText="Spieler 2 muss trinken";
                 document.getElementById("alert").hidden=false;
             }
             else if (resultOne==resultTwo){
                 document.getElementById('alertResult').innerText="Unentschieden";
+                document.getElementById('alertText').innerText="Beide Spieler trinken";
                 document.getElementById("alert").hidden=false;
             }
             else {
                 document.getElementById('alertResult').innerText="Spieler 2 hat gewonnen";
+                document.getElementById('alertText').innerText="Spieler 1 muss trinken";
                 document.getElementById("alert").hidden=false;
             }
         }, i * 12000);
