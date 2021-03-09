@@ -3,16 +3,21 @@
     font-family: "Comic Sans MS";
 }
 
+img{
+    max-width: 260px;
+    margin-bottom: 30px;
+}
+
 #name{
     font-size: xx-large;
     font-weight: bold;
 }
 
-#buttonStart{
+button{
     background-color: white;
 }
 
-#buttonStart:hover{
+button:hover{
     background-color: lightgray;
 }
 

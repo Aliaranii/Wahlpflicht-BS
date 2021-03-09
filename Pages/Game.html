@@ -62,17 +62,17 @@
 <div class="d-flex justify-content-around">
     <div class="p-2" id="name">Würfelspiel</div>
 </div>
-<div class="d-flex justify-content-around">
-    <div class="p-2">Spieler 1</div>
-    <div class="p-2">Spieler 2</div>
-</div>
+<input class="form-control" type="number" placeholder="Anzahl der Spieler (2-6)" id="number" onchange="placeHolders()">
 <div class="alert alert-info" role="alert" id="alert"><p id="alertResult"></p><p id="alertText"></p></div>
+<div class="d-flex justify-content-around" id="firstLine"></div>
+<div class="d-flex justify-content-around" id="picLineOne"></div>
+<div class="d-flex justify-content-around" id="secondLine"></div>
+<div class="d-flex justify-content-around" id="picLineTwo"></div>
 <div class="d-flex justify-content-around">
-    <div class="p-2"><img id="img1" src="../Images/Bierlogo.png" style="max-width:260px;"></div>
-    <div class="p-2"><img id="img2" src="../Images/Bierlogo.png" style="max-width:260px;"></div>
+<div class="p-2" id="buttons">
+    <button id="buttonStart" type="button" onclick="startGame()">Spiel starten</button>
+    <button id="newGame" type="button" onclick="newGame()">neue Anzahl von Spielern</button>
 </div>
-<div class="d-flex justify-content-around">
-    <div class="p-2"><button id="buttonStart" type="button" onclick="startGame()">Spiel starten</button></div>
 </div>
 
 
