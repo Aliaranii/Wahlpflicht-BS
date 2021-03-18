@@ -1,3 +1,19 @@
+window.onload=function () {
+    document.getElementById('aboutBeer').hidden=true;
+    console.log("kein Fenster");
+}
+
+function openBox() {
+    document.getElementById('aboutBeer').hidden=false;
+}
+
+function closeBox() {
+    document.getElementById('aboutBeer').hidden=true;
+}
+
+
+/***
+
 // product.html js
 
 $(document).ready(function () {
@@ -51,3 +67,4 @@ function checkoutupdate() {
 
 var i = 0
 var spinneractive = 0
+**/
