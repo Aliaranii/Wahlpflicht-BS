@@ -12,10 +12,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Contact_form.js link-->
-    <script language="JavaScript" type="text/javascript" src="../Contact.js"></script>
+    <script language="JavaScript" type="text/javascript" src="..\JavaScript\Contact.js"></script>
     <script language="JavaScript" type="text/javascript" src="..\JavaScript\Navbar.js"></script>
     <link rel="icon" href="../Images/Bierlogo.png" sizes="32x32" type="image/png" />
     <link href="../Styles/HeaderImage.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/Contact.css" rel="stylesheet" type="text/css">
     <link href="../Styles/toTheTop.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -23,7 +24,6 @@
 <div class="jumbotron text-center bg-light">
     <img src="../Images/Bierlogo.png" style="max-width:300px;" />
 </div>
-
     <nav id="navbar" class="navbar navbar-expand-sm bg-light border-bottom border-dark navbar-light">
         <a class="navbar-brand" href="Homepage.html">
             <img src="../Images/beericon.png" alt="Kolabier" style="width:40px;">
@@ -57,64 +57,23 @@
     </nav>
 
     <div class="container" style="margin-top:30px;">
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <p><b>Kontaktieren Sie uns:</b></p>
-            </div>
-            <div class="col-2"></div>
-        </div>
-
-        <form>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                        <label class="form-check-label" for="inlineRadio1">Hello</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Male</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                        <label class="form-check-label" for="inlineRadio3">Female</label>
-                    </div>
+       <form>
+            <form style="margin: 50px">
+                <p id="text">Kontaktieren Sie uns:</p>
+                <div class="form-group">
+                    <label for="Input">Name</label>
+                    <input type="text" class="form-control" id="Input" placeholder="Name">
                 </div>
-                <div class="col-2"></div>
-            </div>
-
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="Input">Vorname</label>
-                                <input type="text" class="form-control" id="Input" placeholder="Vorname" required>
-                            </div>
-                            <div class="col-6">
-                                <label for="Input">Nachname</label>
-                                <input type="text" class="form-control" id="Input" placeholder="Nachname" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Input2">E-Mail</label>
-                        <input type="text" class="form-control" id="Input2" placeholder="Beispiel@Beispiel.de" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Input3">Ihre Nachricht</label>
-                        <textarea type="text" class="form-control" id="Input3" placeholder="Ihre Nachricht" required></textarea>
-                    </div>
-                    <input type="button" value="Abschicken" class="btn btn-dark" onclick="contact()">
+                <div class="form-group">
+                    <label for="Input2">E-Mail</label>
+                    <input type="text" class="form-control" id="Input2" placeholder="E-Mail">
                 </div>
-                <div class="col-2"></div>
-            </div>
-
-
+                <div class="form-group" >
+                    <label for="Input3">Ihre Nachricht</label>
+                    <input type="text" class="form-control" id="Input3" placeholder="Nachricht">
+                </div>
+                <input type="button" id="send" value="Abschicken" onclick="contact()">
+            </form>
         </form>
     </div>
 
