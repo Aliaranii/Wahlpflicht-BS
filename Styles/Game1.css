@@ -1,0 +1,33 @@
+.d-flex{
+    margin: 10px;
+    font-family: "Comic Sans MS";
+}
+
+img{
+    max-width: 260px;
+    margin-bottom: 30px;
+}
+
+#name{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+button{
+    background-color: white;
+}
+
+button:hover{
+    background-color: lightgray;
+}
+
+#alertResult{
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+#alertText{
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Comic Sans MS";
+}

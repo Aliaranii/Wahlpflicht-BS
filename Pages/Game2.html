@@ -23,12 +23,12 @@
     </div>
 
     <nav id="navbar" class="navbar navbar-expand-sm bg-light border-bottom border-dark navbar-light">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="Homepage.html">
             <img src="../Images/beericon.png" alt="Kolabier" style="width:40px;">
         </a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="Homepage.html">Homepage</a>
+                <a class="nav-link" href="Homepage.html">Kolabier Company</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Order.html">Produkte</a>
@@ -57,18 +57,25 @@
     <div class="container">
         <div class="row" style="margin-top:50px;">
             <div class=" col-3"></div>
-            <div class="col-6"><b><p id="round">Runde: 0</p></b></div>
+            <div class="col-6 text-center justify-center"><b><input type="text" id="round" class="btn btn-dark" value="Runde: 0" style="width:520px;" disabled /></b></div>
             <div class=" col-3"></div>
         </div>
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <div id="playarea" class="text-center border border-dark" style="height:250px; margin-bottom:50px;">
-                    <p id="mynumber">1</p>
-                    <p id="mycolour">Red</p>
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <div id="cardarea" class="col-2">
+                    <img id="prevcard" src="../Images/Game2/Gray_back.jpg" style="height: 80px; width: auto; margin-top:220px; margin-left:200px;" />
+                    </div>
+                    <div id ="playarea" class="col-8 text-center justify-center" style="height: 300px; margin-bottom: 50px;">
+                        <!--<div id="playarea" class="text-center border border-dark" style="height:250px; margin-bottom:50px;">-->
+                       
+                        <img id="card" class="target" src="../Images/Game2/purple_back.jpg" style="height: 250px; width: auto; margin-top:50px;"/>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
             </div>
-            <div class="col-3"></div>
+            <div class="col-2"></div>
         </div>
 
         <div class="row">
@@ -95,8 +102,9 @@
 
         <div class="row text-center" style="margin-top:50px;">
             <div class="col-3"></div>
-            <div class="col-6">
-                <h5 id="losewin">Warte auf erste Runde...</h5>
+            <div class="col-6" style="margin-bottom:100px;">
+                
+                <input type="text" id="losewin" class="btn btn-dark" value="Warte auf erste Runde..." disabled />
             </div>
             <div class="col-3"></div>
         </div>
