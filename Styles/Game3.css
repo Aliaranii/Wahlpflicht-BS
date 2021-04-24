@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+div#body {
+    text-align: left;
+    width: 65%;
+    margin: auto;
+    top: 80px;
+    position: relative;
+    height: 100%;
+}
+
+.content{
+    height: 550px;
+    position: absolute;
+}
+
+.matchfield {
+    border: 1px solid #808080;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 200px;
+    width: 722px;
+    height: 482px;
+
+}
+
+.number {
+    margin-left: 17px;
+}
+
+.rect {
+    height: 80px;
+    width: 80px;
+    display: block;
+    float: left;
+}
+
+.dark-field {
+    background-color: gainsboro;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.light-field {
+    background-color: lightcyan;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.side-border {
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+
+.top-button-border {
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+.start-border {
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    border-top: 1px solid #808080;
+}
+
+.finish-border {
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    border-top: 1px solid #808080;
+}
+
+.left-button-corner-border {
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+.right-button-corner-border {
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+.left-top-corner-border {
+    border-left: 1px solid #808080;
+    border-top: 1px solid #808080;
+}
+
+.right-top-corner-border {
+    border-right: 1px solid #808080;
+    border-top: 1px solid #808080;
+}
+
+.wrapper {
+    height: 250px;
+    perspective: 700px;
+    -webkit-perspective: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: arial, sans-serif;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateY(35deg) rotatex(50deg);
+}
+
+.cube > div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.cube div:nth-child(1) {
+    transform: translateZ(60px);
+    background: #237ad4;
+}
+
+.cube div:nth-child(2) {
+    transform: rotateX(180deg) translateZ(60px);
+    background: #2070c3;
+}
+
+.cube div:nth-child(3) {
+    transform: rotateY(-90deg) translateZ(60px);
+    background: #2e84dd;
+}
+
+.cube div:nth-child(4) {
+    transform: rotateY(90deg) translateZ(60px);
+    background: #3f8edf;
+}
+
+.cube div:nth-child(5) {
+    transform: rotateX(90deg) translateZ(60px);
+    background: #2070d3;
+}
+
+.cube div:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(60px);
+    background: #1d67b2;
+}
