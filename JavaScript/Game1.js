@@ -61,7 +61,7 @@ function setPlayers() {
         }
     }
     else{
-        document.getElementById('alertResult').innerText="Falsche eingabe";
+        document.getElementById('alertResult').innerText="Falsche Eingabe";
         document.getElementById("alert").hidden=false;
         document.getElementById("newGame").hidden=false;
         document.getElementById("number").hidden=true;
@@ -86,12 +86,16 @@ function setPlayersStartPicture() {
             newPicture.id = "img" + i;
             newPicture.src = "../Images/Bierlogo.png";
             document.getElementById('picLineOne').appendChild(newPicture);
+            /**zum Kontrollieren, später löschen**/
+            console.log('img'+i);
         }
         for (let i = Math.ceil(numberOfPlayers / 2); i < numberOfPlayers; i++) {
             newPicture = document.createElement('img');
             newPicture.id = "img" + i;
             newPicture.src = "../Images/Bierlogo.png";
             document.getElementById('picLineTwo').appendChild(newPicture);
+            /**zum Kontrollieren, später löschen**/
+            console.log('img'+i);
         }
     }
 }
@@ -101,12 +105,13 @@ function changePicture() {
     let numberOfPlayers = document.getElementById("number").value;
     results=[];
     result;
+    var randomPicture;
     /**WinnerList**/
     for(let i=0;i<numberOfPlayers;i++){
         result=Math.floor(Math.random() * 6) + 1;
         results.push(result);
         /**zum Kontrollieren, später löschen**/
-        console.log(results[i]);
+        console.log('res '+i+': '+results[i]);
     }
 
     /**Players**/
@@ -116,7 +121,9 @@ function changePicture() {
                 setTimeout(function timer() {
                     for (let i = 0; i < 6; i++) {
                         setTimeout(function timer() {
-                            document.getElementById('img'+k).src = pictures[i];
+                            /**randomPicture**/
+                            randomPicture=Math.floor(Math.random() * 6) + 1;
+                            document.getElementById('img'+k).src = pictures[randomPicture-1];
                         }, i * 500);
                     }
                 }, i * 300);
@@ -124,13 +131,13 @@ function changePicture() {
         });
 
         setTimeout(function timer() {
-            for (let i=0; i<numberOfPlayers;i++){
-                var resPic=results[i];
-                document.getElementById('img'+i).src = pictures[resPic-1];
+            for (let i = 0; i < numberOfPlayers; i++) {
+                var resPic = results[i];
+                document.getElementById('img' + i).src = pictures[resPic - 1];
             }
-        }, i * 1900);
-
+        }, k/k * 6000);
     }
+
     /**Gewinner ausgeben**/
     winner=Math.max(...results);
     console.log(winner);
@@ -161,7 +168,7 @@ function changePicture() {
             }
         }
         document.getElementById("alert").hidden=false;
-    }, 6000);
+    }, 6000+numberOfPlayers*100);
 }
 
 

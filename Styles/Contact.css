@@ -1,0 +1,21 @@
+.form-group{
+    max-width: 50%;
+    margin: auto auto auto auto;
+}
+
+#text{
+    position: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+#send{
+    margin: 5% auto 5% 45%;
+    position: relative;
+}
+
+#Input3{
+    min-height: 140px;
+    text-align: center;
+}

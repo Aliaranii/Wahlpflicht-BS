@@ -4,11 +4,9 @@ function contact() {
     var name=document.getElementById('Input').value;
     var text=document.getElementById('Input3').value;
 
-    console.log(mail);
-    console.log(name);
-    console.log(text);
-
-    /*E-Mail konfigurieren*/
-    document.location.href = "mailto:exemple@expl?subject="
-        + "&body=" + encodeURIComponent(text);
+    if(name.length>0&text.length>0&mail.length>0){
+        document.location.href = "mailto:kolabier@company.com?"
+        + "subject= E-Mail an Kolabier Company"
+        + "&body=" + encodeURIComponent(text +"\n\n" + "Mit freundlichen Grüßen \n" + name);
+    }
 }

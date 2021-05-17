@@ -1,0 +1,38 @@
+.box{
+    height: 400px;
+    background: lightgray;
+    border-radius: 6px;
+    position: fixed;
+    left:10%;
+    bottom: 10%;
+    width: 60em;
+    z-index: 1;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+}
+close:focus{
+    color: black;
+}
+.close:before,
+.close:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 20px;
+    background-color: #F0F0F0;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: top left;
+    content: '';
+}
+.close:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
