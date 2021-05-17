@@ -1,43 +1,202 @@
 [
-  "Wer im Monat April oder November Geburtstag hat, muss einen Shot trinken.",
-  "Alle trinken.",
-  "Du trinkst und die beiden Personen, die neben dir Sitzen, auch.",
-  "Alle müssen wie Yoda reden. Wer es nicht hinkriegt, muss das Getränk, was er gerade trinkt, doppelt genießen.",
-  "Würfel. Bei grader Zahl trinkst du und bei ungrader der Rest.",
-  "Bestimme einen der trinken soll.",
-  "Alle Typen trinken.",
-  "Einer deiner Wahl trinkt 2 Schlücke.",
-  "Es trinken alle die, die ein ungrades alter haben.",
-  "Alle trinken.",
-  "Es trinken alle die, die ein grades alter haben.",
-  "Endlich kannst DU trinken.",
-  "Alle trinken die ein Bruder haben.",
-  "Alle die eine Schwester haben trinken.",
-  "Jeder darf ein Schluck trinken.",
-  "Alle Mädels trinken.",
-  "Gehe zurück auf Feld 9 und Trinke 5.",
-  "Alle unter 23 trinken.",
-  "Würfel. Trinke so viele, wie du würfest und gehe zurück auf START.",
-  "Gehe zurück auf Feld 6.",
-  "Gehe 2 Felder zurück.",
-  "Gehe zurück auf Start",
-  "Es trinkt der, der am nächsten am Start ist.",
-  "Jeder der keine 10 Euro hat trinkt.",
-  "Jeder der eine Jeans an hat trinkt.",
-  "Trinke und zieh ein Kleidungsstück aus.",
-  "Leere dein Glas und gehe zurück zum Start.",
-  "Wasser pause.",
-  "Würfle nochmal.",
-  "Verteile 3 Schlücke.",
-  "Alle außer dir trinken.",
-  "Alle mit einem Haustier trinken.",
-  "Der jüngste trinkt.",
-  "Der älteste trinkt.",
-  "Alle mit grünen Augen trinken.",
-  "Alle mit brauen Augen trinken.",
-  "Dein rechter Sitznachbar mischt dir deinen näschten Drink.",
-  "Alle mit blauen Augen trinken",
-  "Tausche dein Oberteil mit dem Spieler auf deiner linken Seite.",
-  "Alle trinken.",
-  "letztes"
+  {
+    "text": "Wer im Monat April oder November Geburtstag hat, muss einen Shot trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Alle trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Du trinkst und die beiden Personen, die neben dir Sitzen, auch.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Alle müssen wie Yoda reden. Wer es nicht hinkriegt, muss das Getränk, was er gerade trinkt, doppelt genießen.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Würfel. Bei geraden Zahl trinkst du und bei ungeraden der Rest.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Bestimme einen der trinken soll.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Alle Typen trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Einer deiner Wahl trinkt 2 Schlücke.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Es trinken alle die, die ein ungerades alter haben.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Alle trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Es trinken alle die, die ein gerades alter haben.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Endlich kannst DU trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Alle trinken die ein Bruder haben.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Alle die eine Schwester haben trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Jeder darf ein Schluck trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Alle Mädels trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Gehe zurück/vor auf Feld 9 und Trinke 5.",
+    "field": "9",
+    "cube": false
+  },
+  {
+    "text": "Alle unter 23 trinken.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Würfel. Trinke so viele, wie du würfelst und gehe zurück auf START.",
+    "field": "0",
+    "cube": true
+  },
+  {
+    "text": "Gehe zurück/vor auf Feld 6.",
+    "field": "6",
+    "cube": false
+  },
+  {
+    "text": "Gehe zurück/vor auf Feld 11.",
+    "field": "11",
+    "cube": false
+  },
+  {
+    "text": "Gehe zurück auf Start",
+    "field": "0",
+    "cube": false
+  },
+  {
+    "text": "Es trinkt der, der am nächsten am Start ist.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Jeder der keine 10 Euro dabei hat trinkt.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Jeder der eine Jeans an hat trinkt.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Trinke und zieh ein Kleidungsstück aus.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Leere dein Glas und gehe zurück zum Start.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Wasser pause.",
+    "field": null,
+    "cube": false
+  },
+  {
+    "text": "Würfle nochmal.",
+    "field": "field+cube",
+    "cube": true
+  },
+  {
+    "text": "Verteile 3 Schlücke.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Alle außer dir trinken.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Alle mit einem Haustier trinken.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Der jüngste trinkt.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Der älteste trinkt.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Alle mit grünen Augen trinken.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Alle mit brauen Augen trinken.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Dein rechter Sitznachbar mischt dir deinen nächsten Drink.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Alle mit blauen Augen trinken",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Tausche dein Oberteil mit dem Spieler auf deiner linken Seite.",
+    "field": null,
+    "cube": true
+  },
+  {
+    "text": "Alle trinken.",
+    "field": null,
+    "cube": true
+  }
 ]

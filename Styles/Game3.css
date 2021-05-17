@@ -1,18 +1,14 @@
 body {
     margin: 0;
+
 }
 
-div#body {
-    text-align: left;
-    width: 65%;
-    margin: auto;
-    top: 80px;
-    position: relative;
-    height: 100%;
+#actionCard{
+    display: none;
 }
 
 .content{
-    height: 550px;
+    height: 580px;
     position: absolute;
 }
 
@@ -20,9 +16,9 @@ div#body {
     border: 1px solid #808080;
     display: block;
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     position: absolute;
-    left: 200px;
+    left: 150px;
     width: 722px;
     height: 482px;
 
@@ -93,6 +89,18 @@ div#body {
     border-top: 1px solid #808080;
 }
 
+.container{
+    width: 80%;
+    height: 100%;
+}
+
+.number-of-players-control{
+
+    margin-top: 60px;
+
+}
+
+/*
 .wrapper {
     height: 250px;
     perspective: 700px;
@@ -150,4 +158,4 @@ div#body {
 .cube div:nth-child(6) {
     transform: rotateX(-90deg) translateZ(60px);
     background: #1d67b2;
-}
+}*/
