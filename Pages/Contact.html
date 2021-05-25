@@ -14,7 +14,7 @@
     <!--Contact_form.js link-->
     <script language="JavaScript" type="text/javascript" src="..\JavaScript\Contact.js"></script>
     <script language="JavaScript" type="text/javascript" src="..\JavaScript\Navbar.js"></script>
-    <link rel="icon" href="../Images/Bierlogo.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="../Images/Bierlogo.png" sizes="32x32" type="image/png"/>
     <link href="../Styles/HeaderImage.css" rel="stylesheet" type="text/css">
     <link href="../Styles/Contact.css" rel="stylesheet" type="text/css">
     <link href="../Styles/toTheTop.css" rel="stylesheet" type="text/css">
@@ -22,76 +22,62 @@
 <body>
 <a id="toplink" href="#top">zum Seitenanfang</a>
 <div class="jumbotron text-center bg-light">
-    <img src="../Images/Bierlogo.png" style="max-width:300px;" />
+    <img src="../Images/Bierlogo.png" style="max-width:300px;"/>
 </div>
-    <nav id="navbar" class="navbar navbar-expand-sm bg-light border-bottom border-dark navbar-light">
-        <a class="navbar-brand" href="Index.html">
-            <img src="../Images/beericon.png" alt="Kolabier" style="width:40px;">
-        </a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="Index.html">Kolabier Company</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Order.html">Produkte</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="About.html">Über uns</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="Contact.html">Kontakt</a>
-            </li>
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Trinkspiele</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="Game.html">Spiel</a>
-                    <a class="dropdown-item" href="Game2.html">Spiel 2</a>
-                    <a class="dropdown-item" href="Game3.html">Spiel 3</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Impressum.html">Impressum</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="container" style="margin-top:30px;">
-       <form>
-            <form style="margin: 50px">
-                <p id="text">Kontaktieren Sie uns:</p>
-                <div class="form-group">
-                    <label for="Input">Name</label>
-                    <input type="text" class="form-control" id="Input" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label for="Input2">E-Mail</label>
-                    <input type="text" class="form-control" id="Input2" placeholder="E-Mail">
-                </div>
-                <div class="form-group" >
-                    <label for="Input3">Ihre Nachricht</label>
-                    <input type="text" class="form-control" id="Input3" placeholder="Nachricht">
-                </div>
-                <input type="button" id="send" value="Abschicken" onclick="contact()">
-            </form>
-        </form>
-    </div>
-
-    <div class="jumbotron text-center bg-light" style="margin-top: 20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-3"><a href="#">Something</a><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p></div>
-                <div class="col-3"><a href="#">Anything</a><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p></div>
-                <div class="col-3"><a href="#">Morething</a><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p></div>
-                <div class="col-3"><a href="impressum.html">Impressum</a>
-                    <p>Tel: 1234567890</p>
-                    <p>E-Mail: kolabier@company.com</p>
-                    <p>Adresse: Meta-Sattler-Str. 33, 28217 Bremen</p>
-                </div>
+<nav id="navbar" class="navbar navbar-expand-sm bg-light border-bottom border-dark navbar-light">
+    <a class="navbar-brand" href="Index.html">
+        <img src="../Images/beericon.png" alt="Kolabier" style="width:40px;">
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="Index.html">Kolabier Company</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Order.html">Produkte</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="About.html">Über uns</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="Contact.html">Kontakt</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Trinkspiele</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Game.html">Spiel</a>
+                <a class="dropdown-item" href="Game2.html">Spiel 2</a>
+                <a class="dropdown-item" href="Game3.html">Spiel 3</a>
             </div>
-        </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Impressum.html">Impressum</a>
+        </li>
+    </ul>
+</nav>
 
-    </div>
-
+<div class="container" style="margin-top:30px;">
+    <form>
+        <form style="margin: 50px">
+            <p id="text">Kontaktieren Sie uns:</p>
+            <div class="form-group">
+                <label for="Input">Name</label>
+                <input type="text" class="form-control" id="Input" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="Input2">E-Mail</label>
+                <input type="text" class="form-control" id="Input2" placeholder="E-Mail">
+            </div>
+            <div class="form-group">
+                <label for="Input3">Ihre Nachricht</label>
+                <input type="text" class="form-control" id="Input3" placeholder="Nachricht">
+            </div>
+            <input type="button" id="send" value="Abschicken" onclick="contact()">
+        </form>
+    </form>
+</div>
+<!--Footer--->
+<iframe src="footer.html" width="100%" scrolling="no" height="300px" style="border:0; margin-top: 20px"
+        allowfullscreen="" loading="lazy"></iframe>
 </body>
 </html>

@@ -14,7 +14,7 @@
     <!--Test.js link-->
     <script language="JavaScript" type="text/javascript" src="..\JavaScript\Game1.js"></script>
     <script language="JavaScript" type="text/javascript" src="..\JavaScript\Navbar.js"></script>
-    <link rel="icon" href="../Images/Bierlogo.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="../Images/Bierlogo.png" sizes="32x32" type="image/png"/>
     <link href="../Styles/HeaderImage.css" rel="stylesheet" type="text/css">
     <link href="../Styles/toTheTop.css" rel="stylesheet" type="text/css">
     <link href="../Styles/Game1.css" rel="stylesheet" type="text/css">
@@ -23,74 +23,60 @@
 <body>
 <a id="toplink" href="#top">zum Seitenanfang</a>
 <div class="jumbotron text-center bg-light">
-    <img src="../Images/Bierlogo.png" style="max-width:300px;" />
+    <img src="../Images/Bierlogo.png" style="max-width:300px;"/>
 </div>
 
-    <nav id="navbar" class="navbar navbar-expand-sm bg-light border-bottom border-dark navbar-light">
-        <a class="navbar-brand" href="Index.html">
-            <img src="../Images/beericon.png" alt="Kolabier" style="width:40px;">
-        </a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="Index.html">Kolabier Company</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Order.html">Produkte</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="About.html">Über uns</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Contact.html">Kontakt</a>
-            </li>
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Trinkspiele</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item active" href="Game.html">Spiel</a>
-                    <a class="dropdown-item" href="Game2.html">Spiel 2</a>
-                    <a class="dropdown-item" href="Game3.html">Spiel 3</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Impressum.html">Impressum</a>
-            </li>
-        </ul>
-    </nav>
+<nav id="navbar" class="navbar navbar-expand-sm bg-light border-bottom border-dark navbar-light">
+    <a class="navbar-brand" href="Index.html">
+        <img src="../Images/beericon.png" alt="Kolabier" style="width:40px;">
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="Index.html">Kolabier Company</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Order.html">Produkte</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="About.html">Über uns</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Kontakt</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Trinkspiele</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item active" href="Game.html">Spiel</a>
+                <a class="dropdown-item" href="Game2.html">Spiel 2</a>
+                <a class="dropdown-item" href="Game3.html">Spiel 3</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Impressum.html">Impressum</a>
+        </li>
+    </ul>
+</nav>
 
-    <!--Game-->
+<!--Game-->
 <div class="d-flex justify-content-around">
     <div class="p-2" id="name">Würfelspiel</div>
 </div>
 <input class="form-control" type="number" placeholder="Anzahl der Spieler (2-6)" id="number" onchange="placeHolders()">
-<div class="alert alert-info" role="alert" id="alert"><p id="alertResult"></p><p id="alertText"></p></div>
+<div class="alert alert-info" role="alert" id="alert"><p id="alertResult"></p>
+    <p id="alertText"></p></div>
 <div class="d-flex justify-content-around" id="firstLine"></div>
 <div class="d-flex justify-content-around" id="picLineOne"></div>
 <div class="d-flex justify-content-around" id="secondLine"></div>
 <div class="d-flex justify-content-around" id="picLineTwo"></div>
 <div class="d-flex justify-content-around">
-<div class="p-2" id="buttons">
-    <button id="buttonStart" type="button" onclick="startGame()">Spiel starten</button>
-    <button id="newGame" type="button" onclick="newGame()">neue Anzahl von Spielern</button>
-</div>
-</div>
-
-
-<!--Footer-->
-<div class="jumbotron text-center bg-light" style="margin-top: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-3"><a href="#">Something</a><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p></div>
-            <div class="col-3"><a href="#">Anything</a><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p></div>
-            <div class="col-3"><a href="#">Morething</a><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p></div>
-            <div class="col-3"><a href="impressum.html">Impressum</a>
-                <p>Tel: 1234567890</p>
-                <p>E-Mail: kolabier@company.com</p>
-                <p>Adresse: Meta-Sattler-Str. 33, 28217 Bremen</p>
-            </div>
-        </div>
+    <div class="p-2" id="buttons">
+        <button id="buttonStart" type="button" onclick="startGame()">Spiel starten</button>
+        <button id="newGame" type="button" onclick="newGame()">neue Anzahl von Spielern</button>
     </div>
-
 </div>
+<!--Footer--->
+<iframe src="footer.html" width="100%" scrolling="no" height="300px" style="border:0; margin-top: 20px"
+        allowfullscreen="" loading="lazy"></iframe>
 </body>
 </html>
