@@ -6,4 +6,6 @@ Genutzte Ressourcen:
    https://getbootstrap.com/docs/4.0/components/alerts/
 2. icons:    
    https://icons.getbootstrap.com/
+   https://de.cleanpng.com/png-8fqvvf/
+   https://de.cleanpng.com/png-a8l0yq/
 3. pictures: 
