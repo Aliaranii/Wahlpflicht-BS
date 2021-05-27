@@ -1,3 +1,9 @@
 # Wahlpflicht-BS
 
-Hier etwas Text um zu gucken dass Update funktioniert
+Genutzte Ressourcen:
+1. bootstrap:
+   https://hackerthemes.com/bootstrap-cheatsheet/
+   https://getbootstrap.com/docs/4.0/components/alerts/
+2. icons:    
+   https://icons.getbootstrap.com/
+3. pictures: 
