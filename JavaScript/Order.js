@@ -1,23 +1,7 @@
-window.onload=function () {
-    document.getElementById('aboutBeer').hidden=true;
-    console.log("kein Fenster");
-}
-
-function openBox() {
-    document.getElementById('aboutBeer').hidden=false;
-}
-
-function closeBox() {
-    document.getElementById('aboutBeer').hidden=true;
-}
-
-
-/***
-
-// product.html js
+var i = 0
+var spinneractive = 0
 
 $(document).ready(function () {
-
     //Standard Wareninhalt von 0 beim Laden der Seite
     standardcart();
 
@@ -65,6 +49,3 @@ function checkoutupdate() {
 
 }
 
-var i = 0
-var spinneractive = 0
-**/
