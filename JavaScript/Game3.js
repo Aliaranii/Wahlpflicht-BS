@@ -8,13 +8,13 @@ let player1Turn;
 
 function startGame() {
     if (player1Turn === true) {
-        console.log("Spieler 1 ist dran");
+      //  console.log("Spieler 1 ist dran");
         movePlayer1();
         randomActionCard();
         return;
     }
     if (player1Turn === false) {
-        console.log("Spieler 2 ist dran");
+      //  console.log("Spieler 2 ist dran");
         movePlayer2();
         randomActionCard();
         return;
@@ -31,7 +31,7 @@ function randomActionCard() {
             let randomActionCardValues = actionCard[getRandomInt(actionCard.length)];
             document.getElementById("actionCardText").innerText = randomActionCardValues.text;
             if (randomActionCardValues.cube === true) {
-                console.log("Würfel würfeln")
+              //  console.log("Würfel würfeln")
                 document.getElementById("action-card-cube-button").style.display = "block";
                 document.getElementById('action-card-placeholder-picture').style.display = "block";
             }
@@ -66,11 +66,11 @@ function randomActionCard() {
                         positionPlayer1 = randomActionCardValues.field;
                     }
                 } else {
-                    console.log("feld wechseln")
+                    //console.log("feld wechseln")
                     if (player1Turn === true) {
                         /* Spieler2 */
 
-                            console.log("Spieler2")
+                           // console.log("Spieler2")
                             if (positionPlayer2 === 1) {
                                 document.getElementById("player2").style.display = "none";
                             }
@@ -82,13 +82,13 @@ function randomActionCard() {
                             }
                             positionPlayer2 = randomActionCardValues.field;
                             document.getElementById("" + positionPlayer2 + "").innerHTML += "<span id='player2'></span>";
-                            console.log(positionPlayer2);
+                            // console.log(positionPlayer2);
 
                     }
                     if (player1Turn === false) {
                         /* Spieler1 */
 
-                            console.log("Spieler1")
+                            //console.log("Spieler1")
                             if (positionPlayer1 === 1) {
                                 document.getElementById("player1").style.display = "none";
                             }
@@ -101,7 +101,7 @@ function randomActionCard() {
                             }
                             positionPlayer1 = randomActionCardValues.field;
                             document.getElementById("" + positionPlayer1 + "").innerHTML += "<span id='player1'></span>";
-                            console.log(positionPlayer1);
+                           // console.log(positionPlayer1);
 
                     }
                 }
@@ -200,11 +200,11 @@ function changeActionCardCubePicture() {
 /**Bilder Tauschen**/
 function changeCubePicture() {
 
-    let numberOfPlayers = 2;//document.getElementById("number").value;
+    let numberOfPlayers = 2; //document.getElementById("number").value;
     //results = [];
     let randomPicture;
     result = Math.floor(Math.random() * 6) + 1;
-    console.log(result);
+    //console.log(result);
 
     for (let k = 0; k < numberOfPlayers; k++) {
         setTimeout(function timer() {
