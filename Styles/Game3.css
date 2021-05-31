@@ -1,10 +1,77 @@
 body {
-    margin: 0;
-
+    margin: 0 0 15px;
+    height: 100%;
 }
 
+h2{
+    margin-bottom: 0;
+}
+
+.container{
+    height: 600px;
+    width: 80%;
+}
 #actionCard{
     display: none;
+    border: 2px solid #808080;
+    z-index: 1;
+    background-color: white;
+    width: 50%;
+    min-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    outline: none;
+    padding: 20px;
+}
+
+.close-button{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+#close-icon{
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.action-card-cube-button{
+    margin-left: 175px;
+}
+
+.cube-button{
+    display: none;
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 200px;
+}
+
+.start-game-button{
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 200px;
+}
+
+#action-card-placeholder-picture{
+    height: 180px;
+    width: 180px;
+    margin-left: 125px;
+    margin-top: 10px;
+}
+
+#placeholder-picture{
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 10px;
 }
 
 .content{
@@ -20,16 +87,63 @@ body {
     position: absolute;
     left: 150px;
     width: 722px;
-    height: 482px;
-
+    height: 481px;
 }
+
+#player1{
+    display: block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: blueviolet;
+    float: left;
+    margin-top: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#player2{
+    display: block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    float: left;
+   margin-top: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/*
+#player3{
+    display: block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    float: left;
+    z-index: 1;
+    margin: 5px;
+}
+
+#player4{
+    display: block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    float: left;
+    z-index: 1;
+    margin: 5px;
+}
+*/
 
 .number {
     margin-left: 17px;
 }
 
 .rect {
-    height: 80px;
+   height: 80px;
     width: 80px;
     display: block;
     float: left;
@@ -89,73 +203,6 @@ body {
     border-top: 1px solid #808080;
 }
 
-.container{
-    width: 80%;
-    height: 100%;
-}
-
 .number-of-players-control{
-
     margin-top: 60px;
-
 }
-
-/*
-.wrapper {
-    height: 250px;
-    perspective: 700px;
-    -webkit-perspective: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: arial, sans-serif;
-}
-
-.cube {
-    width: 100px;
-    height: 100px;
-    transform-style: preserve-3d;
-    transform: rotateY(35deg) rotatex(50deg);
-}
-
-.cube > div {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    text-transform: uppercase;
-}
-
-.cube div:nth-child(1) {
-    transform: translateZ(60px);
-    background: #237ad4;
-}
-
-.cube div:nth-child(2) {
-    transform: rotateX(180deg) translateZ(60px);
-    background: #2070c3;
-}
-
-.cube div:nth-child(3) {
-    transform: rotateY(-90deg) translateZ(60px);
-    background: #2e84dd;
-}
-
-.cube div:nth-child(4) {
-    transform: rotateY(90deg) translateZ(60px);
-    background: #3f8edf;
-}
-
-.cube div:nth-child(5) {
-    transform: rotateX(90deg) translateZ(60px);
-    background: #2070d3;
-}
-
-.cube div:nth-child(6) {
-    transform: rotateX(-90deg) translateZ(60px);
-    background: #1d67b2;
-}*/
