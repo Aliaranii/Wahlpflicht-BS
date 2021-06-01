@@ -128,6 +128,13 @@
                     </button>
                     <img id="action-card-placeholder-picture" src="../Images/Bierlogo.png" style="display:none">
                 </div>
+                <div id="finishedField">
+                    <h2>Herzlichen Glückwunsch</h2>
+                    <p id="finishedBox">.</p>
+                    <button class="close-button" onclick="closeFinishedField()"><img
+                            id="close-icons" src="../Images/Game3/close-icon.png"
+                            alt="close-icon"></button>
+                </div>
             </div>
             <div class="col-sm-2">
 
@@ -139,9 +146,13 @@
                 <div class="number-of-players-control" id="number-of-players-control">
                     <button class="start-game-button" onclick="setPlayer()">Spiel starten</button>
                 </div>
-                <div class="cube" id="cube">
+                <div class="start-game-again-field" id="start-game-again-field">
+                    <button class="start-game-button" onclick="reloadGame()">Neues Spiel starten</button>
+                </div>
+                <div class="cube" id="cube" style="display:none;">
+                    <p id="saysWhichPlayerIsIt">Spiler 1 ist dran.</p>
                  <button class="cube-button" id="cube-button" onclick="changeCubePicture()">Würfeln</button>
-                    <img id="placeholder-picture" src="../Images/Bierlogo.png" style="display:none">
+                    <img id="placeholder-picture" src="../Images/Bierlogo.png" >
                 </div>
             </div>
         </div>
