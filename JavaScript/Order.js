@@ -14,11 +14,11 @@ $(document).ready(function () {
 });
 
 function standardcart() {
-    $('#mycartnumber').text(i + " " + "items");
+    $('#mycartnumber').text(i + " " + "im Warenkorb");
 }
 
 function updatecart() {
-    $('#mycartnumber').text((i = i + 1) + ' ' + 'items');
+    $('#mycartnumber').text((i = i + 1) + ' ' + 'im Warenkorb');
 }
 
 function checkoutupdate() {
@@ -28,7 +28,7 @@ function checkoutupdate() {
             setTimeout(function() {
                     $('#spinneractive').remove();
                     i=0;
-                    $('#mycartnumber').text(i+ " " + "items");
+                    $('#mycartnumber').text(i+ " " + "im Warenkorb");
                 },
                 3000);
             setTimeout(function() {
