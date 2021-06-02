@@ -62,7 +62,11 @@
             <div class="col-sm-10">
                 <div class="content">
                     <div class="matchfield">
-                        <div class="dark-field rect start-border" id="1"><h2>Start</h2></div>
+                        <div class="dark-field rect start-border" id="1">
+                            <h2>Start</h2>
+                            <span id="player1" style="display:none;"></span>
+                            <span id="player2" style="display:none;"></span>
+                        </div>
                         <div class="light-field rect left-top-corner-border" id="26"></div>
                         <div class="dark-field rect top-button-border" id="25"></div>
                         <div class="light-field rect top-button-border" id="24"></div>
@@ -123,7 +127,8 @@
                     <button class="close-button" onclick="closeTextfield()"><img
                             id="close-icon" src="../Images/Game3/close-icon.png"
                             alt="close-icon"></button>
-                    <button class="action-card-cube-button" id="action-card-cube-button" onclick="changeActionCardCubePicture()"
+                    <button class="action-card-cube-button" id="action-card-cube-button"
+                            onclick="changeActionCardCubePicture()"
                             style="display:none">Würfeln
                     </button>
                     <img id="action-card-placeholder-picture" src="../Images/Bierlogo.png" style="display:none">
@@ -138,11 +143,11 @@
             </div>
             <div class="col-sm-2">
 
-               <!-- <div class="number-of-players-control" id="number-of-players-control">
-                    <input class="control" type="number" placeholder="Anzahl der Spieler (2-4)" id="number"
-                           onchange="setPlayers()">
-                    <p id="default-text-player" style="display:none;">Bitte gebe eine Spieler Anzahl zwischen 2 und 4 an.</p>
-                </div> -->
+                <!-- <div class="number-of-players-control" id="number-of-players-control">
+                     <input class="control" type="number" placeholder="Anzahl der Spieler (2-4)" id="number"
+                            onchange="setPlayers()">
+                     <p id="default-text-player" style="display:none;">Bitte gebe eine Spieler Anzahl zwischen 2 und 4 an.</p>
+                 </div> -->
                 <div class="number-of-players-control" id="number-of-players-control">
                     <button class="start-game-button" onclick="setPlayer()">Spiel starten</button>
                 </div>
@@ -151,8 +156,8 @@
                 </div>
                 <div class="cube" id="cube" style="display:none;">
                     <p id="saysWhichPlayerIsIt">Spiler 1 ist dran.</p>
-                 <button class="cube-button" id="cube-button" onclick="changeCubePicture()">Würfeln</button>
-                    <img id="placeholder-picture" src="../Images/Bierlogo.png" >
+                    <button class="cube-button" id="cube-button" onclick="changeCubePicture()">Würfeln</button>
+                    <img id="placeholder-picture" src="../Images/Bierlogo.png">
                 </div>
             </div>
         </div>

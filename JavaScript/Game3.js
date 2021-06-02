@@ -7,32 +7,43 @@ let positionPlayer2;
 let player1Turn;
 
 function startGame() {
+
     if (player1Turn === true) {
-        console.log("Spieler 1 ist dran");
+        // console.log("Spieler 1 ist dran");
         movePlayer1();
         if (positionPlayer1 === 54) {
-            console.log("ziel erreicht Spieler 1");
-            finishedGame();
+            //  console.log("ziel erreicht Spieler 1");
+            setTimeout(function () {
+                finishedGame();
+            }, 250);
         } else {
-            randomActionCard();
+            setTimeout(function () {
+                randomActionCard();
+            }, 250);
         }
         return;
     }
     if (player1Turn === false) {
-        console.log("Spieler 2 ist dran");
+        //  console.log("Spieler 2 ist dran");
         movePlayer2();
         if (positionPlayer2 === 54) {
-            console.log("ziel erreicht Spieler 2");
-            finishedGame();
+            // console.log("ziel erreicht Spieler 2");
+            setTimeout(function () {
+                finishedGame();
+            }, 250);
         } else {
-            randomActionCard();
+            setTimeout(function () {
+                randomActionCard();
+            }, 250);
         }
         return;
     }
+
 }
 
 function finishedGame() {
-    console.log("ziel erreicht")
+    //console.log("ziel erreicht")
+    document.getElementById("actionCard").style.display = "none";
     document.getElementById("cube").style.display = "none";
     document.getElementById("start-game-again-field").style.display = "block";
     document.getElementById("finishedField").style.display = "block";
@@ -45,8 +56,13 @@ function finishedGame() {
 }
 
 function reloadGame() {
-    location.reload();
-    return false;
+    document.getElementById("start-game-again-field").style.display = "none";
+    document.getElementById("finishedField").style.display = "none";
+    removePlayer1();
+    removePLayer2();
+    setPlayer();
+    document.getElementById('placeholder-picture').src = "../Images/Bierlogo.png";
+
 }
 
 
@@ -56,6 +72,8 @@ function getRandomInt(max) {
 
 function randomActionCard() {
     $.getJSON("../JavaScript/ActionCard.json", function (actionCard) {
+            document.getElementById("action-card-cube-button").style.display = "none";
+            document.getElementById('action-card-placeholder-picture').style.display = "none";
             document.getElementById("actionCard").style.display = "block";
             let randomActionCardValues = actionCard[getRandomInt(actionCard.length)];
             document.getElementById("actionCardText").innerText = randomActionCardValues.text;
@@ -79,7 +97,7 @@ function randomActionCard() {
                             }
                         }
                         positionPlayer2 = randomActionCardValues.field;
-                       // console.log("Spieler2 " + positionPlayer2);
+                        // console.log("Spieler2 " + positionPlayer2);
                     }
                     if (player1Turn === false) {
                         /* Spieler1 */
@@ -115,7 +133,7 @@ function randomActionCard() {
                         removePlayer1()
                         positionPlayer1 = randomActionCardValues.field;
                         document.getElementById("" + positionPlayer1 + "").innerHTML += "<span id='player1'></span>";
-                       //  console.log("Spiler1 " + positionPlayer1);
+                        //  console.log("Spiler1 " + positionPlayer1);
 
                     }
                 }
@@ -156,22 +174,23 @@ function setPlayer() {
     positionPlayer1 = 1;
     positionPlayer2 = 1;
     player1Turn = true;
-
-    for (let i = 1; i <= 2; i++) {
-        document.getElementById("1").innerHTML += "<span id=player" + i + "></span>";
-    }
+    document.getElementById("player1").style.display = "block";
+    document.getElementById("player2").style.display = "block";
+    /*for (let i = 1; i <= 2; i++) {
+            document.getElementById("1").innerHTML += "<span id=player" + i + "></span>";
+      }*/
     document.getElementById("number-of-players-control").style.display = "none";
     document.getElementById("cube").style.display = "block";
-
+    sayWhichPlayersItIs();
 }
 
 function movePlayer1() {
     removePlayer1()
 
     positionPlayer1 += result;
-   // console.log(positionPlayer1)
+    // console.log(positionPlayer1)
     if (positionPlayer1 >= 54) {
-       // console.log("Kann der mal im ziel ankommen");
+        // console.log("Kann der mal im ziel ankommen");
         positionPlayer1 = 54;
         document.getElementById("" + positionPlayer1 + "").innerHTML += "<span id='player1'></span>";
     } else {
@@ -187,7 +206,7 @@ function movePlayer2() {
     positionPlayer2 += result;
     // console.log(positionPlayer2)
     if (positionPlayer2 >= 54) {
-      //  console.log("Kann der mal im ziel ankommen");
+        //  console.log("Kann der mal im ziel ankommen");
         positionPlayer2 = 54;
         document.getElementById("" + positionPlayer2 + "").innerHTML += "<span id='player2'></span>";
     } else {
@@ -249,7 +268,7 @@ function sayWhichPlayersItIs() {
 }
 
 function changeCubePicture() {
-
+    document.getElementById("actionCard").style.display = "none";
     let numberOfPlayers = 2; //document.getElementById("number").value;
     //results = [];
     let randomPicture;
@@ -278,8 +297,14 @@ function changeCubePicture() {
             }
         }, k / k * 6000);
     }
-    startGame();
-    sayWhichPlayersItIs();
+    setTimeout(function () {
+        startGame();
+
+    }, 6500);
+    setTimeout(function () {
+        sayWhichPlayersItIs();
+    }, 6750);
+
 }
 
 //id 1: start
